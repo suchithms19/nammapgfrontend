@@ -23,7 +23,7 @@ export default function TenantFormPage() {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await fetch('https://nammapgbackend.onrender.com/api/tenant', {
+      const response = await fetch('backendapi/api/tenant', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

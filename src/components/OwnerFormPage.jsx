@@ -22,7 +22,7 @@ export default function OwnerFormPage() {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await fetch('https://nammapgbackend.onrender.com/api/owner', {
+      const response = await fetch('backendapi/api/owner', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
